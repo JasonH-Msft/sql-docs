@@ -126,8 +126,8 @@ ms.workload: "Inactive"
      The SPN for the PowerPivot instance will be in the form of:  
   
     ```  
-    MSSQLSvc.3/\<Fully Qualified Domain Name (FQDN)>:POWERPIVOT  
-    MSSQLSvc.3/<NetBIOS Name>:POWERPIVOT  
+    MSOLAPSvc.3/<Fully Qualified Domain Name (FQDN)>:POWERPIVOT  
+    MSOLAPSvc.3/<NetBIOS Name>:POWERPIVOT  
     ```  
   
      Where the FQDN and NetBIOS names are the name of the machine that the instance resides on. These SPNs will be placed on the Domain Account that is being used for the service account.  If you are using Network Service, Local System, or the Service ID, you will want to place the SPN on the domain machine account.  If you are using a domain user account, you will place the SPN on that account.  
